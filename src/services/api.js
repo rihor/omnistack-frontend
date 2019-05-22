@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://omnistack-api.herokuapp.com"
+  baseURL: process.env.URL, // pega a variavel do ambiente
 });
 
 export default api;
